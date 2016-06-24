@@ -3,8 +3,6 @@ const morgan = require('morgan')
 
 const router = express.Router()
 
-router.use(morgan('tiny'))
-
 router.get('/genres', (req, res) => {
 	let sampleGenre = {
 		id: 1,
