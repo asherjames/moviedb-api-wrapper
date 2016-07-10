@@ -1,14 +1,12 @@
 const express = require('express')
 const morgan = require('morgan')
 
+const net = require('./net')
+
 const router = express.Router()
 
 router.get('/genres', (req, res) => {
-	let sampleGenre = {
-		id: 1,
-		name: 'Thriller'
-	}
-	res.json(sampleGenre)
+	net.getGenres((data) => {res.json(data)})
 })
 
 module.exports = router
