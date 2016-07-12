@@ -8,9 +8,9 @@ let axiosInst = axios.create({
 })
 
 module.exports = {
-	getGenres(cb) {
+	getMovieGenres(cb) {
 		axiosInst.get(conf.genreListUrl)
-			.then(res => cb(res.data))
+			.then(res => cb(res.data.genres))
 			.catch(err => console.log(err))
 	}
 }
