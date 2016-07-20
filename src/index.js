@@ -2,14 +2,15 @@ const express = require('express')
 const cors = require('cors')
 const morgan = require('morgan')
 
-const genreRoute = require('./router')
+const movieRoute = require('./movieRouter')
+const utilRoute = require('./utilRouter')
 
 const app = express()
 
 app.use(cors({credentials: true, origin: true}))
 app.use(morgan('tiny'))
 
-app.use('/filim-api', genreRoute)
+app.use('/filim-api', movieRoute, utilRoute)
 
 
 app.listen(3000, () => {
