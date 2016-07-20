@@ -2,8 +2,8 @@ const express = require('express')
 const cors = require('cors')
 const morgan = require('morgan')
 
-const movieRoute = require('./movieRouter')
-const utilRoute = require('./utilRouter')
+const movieRoute = require('./routes/movieRouter')
+const utilRoute = require('./routes/utilRouter')
 
 const app = express()
 
