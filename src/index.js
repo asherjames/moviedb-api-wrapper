@@ -3,6 +3,7 @@ const cors = require('cors')
 const morgan = require('morgan')
 
 const movieRoute = require('./routes/movieRouter')
+const tvRoute = require('./routes/tvRouter')
 const utilRoute = require('./routes/utilRouter')
 
 const app = express()
@@ -10,7 +11,7 @@ const app = express()
 app.use(cors({credentials: true, origin: true}))
 app.use(morgan('tiny'))
 
-app.use('/filim-api', movieRoute, utilRoute)
+app.use('/filim-api', movieRoute, tvRoute, utilRoute)
 
 
 app.listen(3000, () => {

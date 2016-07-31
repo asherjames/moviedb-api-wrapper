@@ -12,7 +12,7 @@ module.exports = {
 		axiosInst.get(conf.movieGenreListUrl)
 			.then(res => cb(res.data.genres))
 			.catch(err => console.log(err))
-	}
+	},
 
     getTvGenres(cb) {
         axiosInst.get(conf.tvGenreListUrl)

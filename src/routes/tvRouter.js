@@ -3,7 +3,7 @@ const net = require('../net')
 
 const tvRoute = express.Router()
 
-movieRoute.get('/tv/genres', (req, res) => {
+tvRoute.get('/tv/genres', (req, res) => {
     net.getTvGenres((data) => {res.json(data)})
 })
 
