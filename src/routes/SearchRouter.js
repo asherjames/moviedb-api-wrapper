@@ -8,5 +8,5 @@ searchRoute.get('search/movie', (req, res) => {
 })
 
 searchRoute.get('search/tv', (req, res) => {
-    
+
 })

@@ -1,4 +1,5 @@
 {
 	"movieGenreListUrl" : "http://api.themoviedb.org/3/genre/movie/list",
-    "tvGenreListUrl" : "http://api.themoviedb.org/3/genre/tv/list"
+    "tvGenreListUrl" : "http://api.themoviedb.org/3/genre/tv/list",
+    "discoverMoviesUrl": "http://api.themoviedb.org/3/discover/movie"
 }
