@@ -1,4 +1,3 @@
-const bodyParser = require('body-parser')
 const cors = require('cors')
 const express = require('express')
 const morgan = require('morgan')
@@ -12,7 +11,6 @@ const app = express()
 
 app.use(cors({credentials: true, origin: true}))
 app.use(morgan('tiny'))
-app.use(bodyParser.urlencoded())
 
 app.use('/filim-api', movieRoute, tvRoute, utilRoute, searchRoute)
 
