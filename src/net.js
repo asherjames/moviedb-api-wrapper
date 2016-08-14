@@ -1,5 +1,6 @@
 const axios = require('axios')
 const key = require('../conf/api_key.json').apiKey
+const querystring = require('querystring')
 
 const axiosInst = axios.create({
 	params: {api_key: key}
@@ -12,8 +13,8 @@ module.exports = {
             .catch(err => console.error(err))
     },
 
-    getWithParams(url, params, cb) {
-        axiosInst.get(url + params)
+    getWithParams(url, paramObj, cb) {
+        axiosInst.get(url + "?" + querystring.stringify(paramObj))
             .then(res => cb(res.data))
             .catch(err => console.error(err))
     }

@@ -1,5 +1,5 @@
 const express = require('express')
-const conf = require('../conf/conf.json')
+const conf = require('../../conf/conf.json')
 const net = require('../net')
 
 const movieRoute = express.Router()
