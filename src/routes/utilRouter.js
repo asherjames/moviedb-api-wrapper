@@ -8,7 +8,7 @@ utilRoute.get('/allyears', (req, res) => {
 
 function getYears() {
     let year = new Date().getFullYear()
-    return Array.from({length: year - 1899}, (a, b) => b + 1900)
+    return Array.from({length: year - 1899}, (a, b) => b + 1900).reverse()
 }
 
 module.exports = utilRoute
