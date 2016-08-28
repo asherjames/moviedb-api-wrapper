@@ -4,7 +4,7 @@ const net = require('../net')
 
 const searchRoute = express.Router()
 
-searchRoute.get('search/movie', (req, res) => {
+searchRoute.get('/search/movie', (req, res) => {
     let reqObj = {
         "with_genres": req.query.genre,
         "release_date.gte": req.query.toReleaseYear,
