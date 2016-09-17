@@ -1,11 +1,12 @@
 const express = require('express')
-const conf = require('../../conf/conf.json')
-const net = require('../net')
+const imgConf = require('../../conf/conf.json').imageConf
+const request = require('request')
 
 const imageRoute = express.Router()
 
-imageRoute.get('/image/:imageId', (req, res) => {
-    net.get(conf.baseUrl + req.params[0], image => res.sendFile(image))
+imageRoute.get('/image/:size/:imageId', (req, res) => {
+    let url = imgConf.base_url + imgConf.poster_sizes[req.params.size] + "/" + req.params.imageId
+    req.pipe(request(url)).pipe(res)
 })
 
 module.exports = imageRoute
