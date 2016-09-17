@@ -47,6 +47,11 @@
       "from": "cors@latest",
       "resolved": "https://registry.npmjs.org/cors/-/cors-2.7.1.tgz"
     },
+    "cron-parser": {
+      "version": "1.1.0",
+      "from": "cron-parser@1.1.0",
+      "resolved": "https://registry.npmjs.org/cron-parser/-/cron-parser-1.1.0.tgz"
+    },
     "debug": {
       "version": "2.2.0",
       "from": "debug@>=2.2.0 <2.3.0",
@@ -122,6 +127,11 @@
       "from": "ipaddr.js@1.1.1",
       "resolved": "https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-1.1.1.tgz"
     },
+    "long-timeout": {
+      "version": "0.0.2",
+      "from": "long-timeout@0.0.2",
+      "resolved": "https://registry.npmjs.org/long-timeout/-/long-timeout-0.0.2.tgz"
+    },
     "media-typer": {
       "version": "0.3.0",
       "from": "media-typer@0.3.0",
@@ -166,6 +176,11 @@
       "version": "0.6.1",
       "from": "negotiator@0.6.1",
       "resolved": "https://registry.npmjs.org/negotiator/-/negotiator-0.6.1.tgz"
+    },
+    "node-schedule": {
+      "version": "1.1.1",
+      "from": "node-schedule@latest",
+      "resolved": "https://registry.npmjs.org/node-schedule/-/node-schedule-1.1.1.tgz"
     },
     "on-finished": {
       "version": "2.3.0",

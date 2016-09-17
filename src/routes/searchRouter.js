@@ -6,9 +6,9 @@ const searchRoute = express.Router()
 
 searchRoute.get('/search/movie', (req, res) => {
     let reqObj = {
-        "with_genres": req.query.genre,
-        "release_date.gte": req.query.toReleaseYear,
-        "release_date.lte": req.query.fromReleaseYear
+        "with_genres": req.query.selectedGenre,
+        "release_date.gte": req.query.toReleaseYear + "-01-01",
+        "release_date.lte": req.query.fromReleaseYear + "-01-01"
     }
 
     net.getWithParams(conf.discoverMoviesUrl, reqObj, data => res.json(data))
