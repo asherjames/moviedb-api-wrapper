@@ -6,7 +6,9 @@ module.exports = {
     updateConfig() {
         net.get(conf.confUrl, (data) => {
             conf.imageConf = data.images
-            fs.writeFileSync('../conf/conf.json', JSON.stringify(conf))
+            console.log('Updating TMDB image configuration data...')
+            fs.writeFileSync(__dirname + '/../conf/conf.json', JSON.stringify(conf))
+            console.log('Finished writing configuration to file...')
         })
     }
 }

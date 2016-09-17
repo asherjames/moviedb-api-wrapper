@@ -16,6 +16,8 @@ app.use(cors({credentials: true, origin: true}))
 app.use(morgan('dev'))
 
 
+tmdbConf.updateConfig()
+
 let confJob = schedule.scheduleJob({dayOfWeek: 0}, tmdbConf.updateConfig)
 
 app.use('/filim-api', movieRoute, tvRoute, utilRoute, searchRoute, imageRoute)

@@ -11,7 +11,7 @@ module.exports = {
         console.log(`request url: ${url}`)
 	    axiosInst.get(url)
             .then(res => cb(res.data))
-            .catch(err => console.error("There was an error performing a regular get"))
+            .catch(err => console.error("There was an error performing a regular get", err))
     },
 
     getWithParams(url, paramObj, cb) {
