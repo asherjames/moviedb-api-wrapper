@@ -1,4 +1,4 @@
-# moviedb-api-wrapper
+# moviedb-api-wrapper [![Build Status](https://travis-ci.org/asherjames/moviedb-api-wrapper.svg?branch=dev)](https://travis-ci.org/asherjames/moviedb-api-wrapper)
 Node wrapper for themoviedb.org API
 
 API wrapper for [filim](https://github.com/asherjames/filim-frontend) webapp.  Simplifies themoviedb.org API calls.
@@ -11,7 +11,12 @@ I recommend using [dotenv](https://www.npmjs.com/package/dotenv) with your own A
 npm install
 ```
 
-###Run
+###Test
+```
+npm test
+```
+
+###Run on port 80
 ```
 npm start
 ```

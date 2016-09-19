@@ -20,7 +20,7 @@ schedule.scheduleJob({dayOfWeek: 0, minute: 0}, tmdbConf.updateConfig)
 
 app.use('/filim-api', movieRoute, tvRoute, utilRoute, searchRoute, imageRoute)
 
-let server = app.listen(3000, () => {
+let server = app.listen(80, () => {
     console.log("Filim ready for film-finding on 3000...")
 })
 module.exports = server;
