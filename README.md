@@ -16,7 +16,7 @@ npm install
 npm test
 ```
 
-###Run on port 80
+###Run on port 3000
 ```
 npm start
 ```
