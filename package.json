@@ -4,7 +4,7 @@
   "description": "API wrapper for themoviedb.org ",
   "main": "index.js",
   "scripts": {
-    "test": "",
+    "test": "mocha spec",
     "start": "node src/index.js"
   },
   "author": "Asher James",
@@ -17,5 +17,11 @@
     "morgan": "^1.7.0",
     "node-schedule": "^1.1.1",
     "request": "^2.74.0"
+  },
+  "devDependencies": {
+    "jasmine-node": "^1.14.5",
+    "mocha": "^3.0.2",
+    "should": "^11.1.0",
+    "supertest": "^2.0.0"
   }
 }
