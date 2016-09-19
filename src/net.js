@@ -1,9 +1,8 @@
 const axios = require('axios')
-const key = require('../conf/api_key.json').apiKey
 const querystring = require('querystring')
 
 const axiosInst = axios.create({
-	params: {api_key: key}
+	params: {api_key: process.env.TMDB_API_KEY}
 })
 
 module.exports = {
