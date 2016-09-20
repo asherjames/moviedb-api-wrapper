@@ -2,6 +2,9 @@
   "name": "filim-backend",
   "version": "0.0.1",
   "description": "API wrapper for themoviedb.org ",
+  "engines": {
+    "node": "6.2.0"
+  },
   "main": "index.js",
   "scripts": {
     "test": "mocha spec",
@@ -19,7 +22,6 @@
     "request": "^2.74.0"
   },
   "devDependencies": {
-    "jasmine-node": "^1.14.5",
     "mocha": "^3.0.2",
     "should": "^11.1.0",
     "supertest": "^2.0.0"
