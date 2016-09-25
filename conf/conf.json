@@ -1,1 +1,48 @@
-{"baseUrl":"http://api.themoviedb.org/3/","movieGenreListUrl":"http://api.themoviedb.org/3/genre/movie/list","tvGenreListUrl":"http://api.themoviedb.org/3/genre/tv/list","discoverMoviesUrl":"http://api.themoviedb.org/3/discover/movie","confUrl":"http://api.themoviedb.org/3/configuration","imageConf":{"base_url":"http://image.tmdb.org/t/p/","secure_base_url":"https://image.tmdb.org/t/p/","backdrop_sizes":["w300","w780","w1280","original"],"logo_sizes":["w45","w92","w154","w185","w300","w500","original"],"poster_sizes":["w92","w154","w185","w342","w500","w780","original"],"profile_sizes":["w45","w185","h632","original"],"still_sizes":["w92","w185","w300","original"]}}
+{
+  "baseUrl": "http://api.themoviedb.org/3/",
+  "movieGenreListUrl": "http://api.themoviedb.org/3/genre/movie/list",
+  "tvGenreListUrl": "http://api.themoviedb.org/3/genre/tv/list",
+  "discoverMoviesUrl": "http://api.themoviedb.org/3/discover/movie",
+  "confUrl": "http://api.themoviedb.org/3/configuration",
+  "searchActorsUrl": "https://api.themoviedb.org/3/search/person",
+  "imageConf": {
+    "base_url": "http://image.tmdb.org/t/p/",
+    "secure_base_url": "https://image.tmdb.org/t/p/",
+    "backdrop_sizes": [
+      "w300",
+      "w780",
+      "w1280",
+      "original"
+    ],
+    "logo_sizes": [
+      "w45",
+      "w92",
+      "w154",
+      "w185",
+      "w300",
+      "w500",
+      "original"
+    ],
+    "poster_sizes": [
+      "w92",
+      "w154",
+      "w185",
+      "w342",
+      "w500",
+      "w780",
+      "original"
+    ],
+    "profile_sizes": [
+      "w45",
+      "w185",
+      "h632",
+      "original"
+    ],
+    "still_sizes": [
+      "w92",
+      "w185",
+      "w300",
+      "original"
+    ]
+  }
+}
