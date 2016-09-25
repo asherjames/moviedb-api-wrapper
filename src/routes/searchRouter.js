@@ -18,14 +18,27 @@ searchRoute.get('/search/tv', (req, res) => {
 })
 
 searchRoute.get('/search/actor', (req, res) => {
-    let reqObj = {
-        "query": req.query.searchTerm,
-        "include_adult": false
+    if (req.query.searchTerm.length > 0) {
+        let reqObj = {
+            "query": req.query.searchTerm,
+            "include_adult": false
+        }
+        net.getWithParams(conf.searchActorsUrl, reqObj, data => {
+            let actorArray = data.results.sort((a, b) => {
+                if (a.popularity < b.popularity) {
+                    return 1;
+                }
+                if (a.popularity > b.popularity) {
+                    return -1;
+                }
+                return 0;
+            }).map(e => ({name: e.name, id: e.id}))
+
+            res.json(actorArray)
+        })
+    } else {
+        res.json([])
     }
-    net.getWithParams(conf.searchActorsUrl, reqObj, data => {
-        let actorArray = data.results.map( a => ({name: a.name, id: a.id}))
-        res.json(actorArray)
-    })
 })
 
 module.exports = searchRoute
