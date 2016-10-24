@@ -1,5 +1,5 @@
 const axios = require('axios')
-const querystring = require('querystring')
+const qs = require('query-string')
 
 const axiosInst = axios.create({
 	params: {api_key: process.env.TMDB_API_KEY}
@@ -14,7 +14,7 @@ module.exports = {
     },
 
     getWithParams(url, paramObj, cb) {
-        let finalUrl = url + "?" + querystring.stringify(paramObj)
+        let finalUrl = url + "?" + qs.stringify(paramObj)
         console.log(`request url: ${finalUrl}`)
         axiosInst.get(finalUrl)
             .then(res => cb(res.data))
