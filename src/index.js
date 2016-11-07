@@ -17,7 +17,7 @@ app.use(morgan('dev'))
 
 schedule.scheduleJob({dayOfWeek: 0, minute: 0}, tmdbConf.updateConfig)
 
-app.use('/filim-api', movieRoute, tvRoute, utilRoute, searchRoute, imageRoute)
+app.use('/filim-api', movieRoute, utilRoute, searchRoute, imageRoute)
 
 let port = process.env.PORT || 3000
 
