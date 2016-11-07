@@ -5,7 +5,6 @@ const schedule = require('node-schedule')
 require('dotenv').config()
 
 const movieRoute = require('./routes/movieRouter')
-const tvRoute = require('./routes/tvRouter')
 const utilRoute = require('./routes/utilRouter')
 const searchRoute = require('./routes/searchRouter')
 const imageRoute = require('./routes/imageRouter')

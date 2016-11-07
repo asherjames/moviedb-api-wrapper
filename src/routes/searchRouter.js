@@ -11,13 +11,11 @@ searchRoute.get('/search/movie', (req, res) => {
         "release_date.lte": req.query.toReleaseYear + "-01-01",
         "with_cast": req.query.withActors,
         "with_keywords": req.query.withKeyword,
-        "sort_by": req.query.withSorter
+        "sort_by": req.query.withSorter,
+        "page": req.query.page
     }
-    net.getWithParams(conf.discoverMoviesUrl, reqObj, data => res.json(data))
-})
 
-searchRoute.get('/search/tv', (req, res) => {
-    //TODO
+    net.getWithParams(conf.discoverMoviesUrl, reqObj, data => res.json(data))
 })
 
 searchRoute.get('/search/actor', (req, res) => {
